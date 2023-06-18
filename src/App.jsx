@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Bars } from 'react-loader-spinner';
-import { FaFigma, FaInfoCircle, FaGithub } from 'react-icons/fa';
+import { FaFigma } from 'react-icons/fa';
 import Header from './Header.jsx';
 import Footer from './Footer.jsx';
-import ArticleComp from './Article.jsx';
+import ArticleCompo from './Article.jsx';
 
 function App() {
     const API = 'https://valorant-api.com/v1/agents?isPlayableCharacter=true';
@@ -35,7 +35,7 @@ function App() {
             {isLoading ?
             <Bars /> :
             articles.map((article) => {
-                return <ArticleComp key={article.displayName} {...article} />
+                return <ArticleCompo key={article.displayName} {...article} />
             })}
         </main>
         <Footer />

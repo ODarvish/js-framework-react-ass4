@@ -1,7 +1,7 @@
 export default ({ fullPortrait, developerName, displayName, description, displayIcon }) => {
 
     let readMore = "https://playvalorant.com/en-us/agents/" + displayName;
-    console.log(readMore)
+    // console.log(readMore)
 
     return (
       <div className="article-container">
